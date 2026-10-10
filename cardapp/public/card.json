@@ -1,0 +1,107 @@
+[
+  {
+    "id": "cc_9a8f3b2e-1c4d-4e5f-8a7b-6c5d4e3f2a1b",
+    "card_holder": "Jane Smith",
+    "card_number": "4111 2222 3333 4444",
+    "card_brand": "Visa",
+    "expiry_date": "05/29",
+    "cvv": "123",
+    "billing_address": {
+      "street": "456 Elm Street",
+      "city": "Austin",
+      "state": "TX",
+      "zip_code": "78701",
+      "country": "USA"
+    },
+    "card_limits": {
+      "credit_limit": 5000.00,
+      "available_credit": 4200.00,
+      "currency": "USD"
+    },
+    "status": "active"
+  },
+  {
+    "id": "cc_4b7c2a1f-8e9d-4c3b-2a1f-9e8d7c6b5a4f",
+    "card_holder": "Michael Johnson",
+    "card_number": "5412 7512 3412 8901",
+    "card_brand": "Mastercard",
+    "expiry_date": "09/27",
+    "cvv": "456",
+    "billing_address": {
+      "street": "789 Oak Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "60601",
+      "country": "USA"
+    },
+    "card_limits": {
+      "credit_limit": 15000.00,
+      "available_credit": 12350.75,
+      "currency": "USD"
+    },
+    "status": "active"
+  },
+  {
+    "id": "cc_1e2d3c4b-5a6f-7e8d-9c0b-1a2b3c4d5e6f",
+    "card_holder": "Emily Davis",
+    "card_number": "3782 822468 30005",
+    "card_brand": "American Express",
+    "expiry_date": "11/30",
+    "cvv": "8492",
+    "billing_address": {
+      "street": "101 Pine Road",
+      "city": "Seattle",
+      "state": "WA",
+      "zip_code": "98101",
+      "country": "USA"
+    },
+    "card_limits": {
+      "credit_limit": 25000.00,
+      "available_credit": 18900.00,
+      "currency": "USD"
+    },
+    "status": "active"
+  },
+  {
+    "id": "cc_8f7e6d5c-4b3a-2f1e-0d9c-8b7a6f5e4d3c",
+    "card_holder": "Carlos Rodriguez",
+    "card_number": "6011 0009 1234 5678",
+    "card_brand": "Discover",
+    "expiry_date": "03/28",
+    "cvv": "789",
+    "billing_address": {
+      "street": "202 Maple Boulevard",
+      "city": "Miami",
+      "state": "FL",
+      "zip_code": "33101",
+      "country": "USA"
+    },
+    "card_limits": {
+      "credit_limit": 3000.00,
+      "available_credit": 150.00,
+      "currency": "USD"
+    },
+    "status": "active"
+  },
+  {
+    "id": "cc_3c2b1a0f-9e8d-7c6b-5a4f-3e2d1c0b9a8f",
+    "card_holder": "Sarah Wilson",
+    "card_number": "4000 1234 5678 9010",
+    "card_brand": "Visa",
+    "expiry_date": "01/26",
+    "cvv": "654",
+    "billing_address": {
+      "street": "555 Cedar Lane",
+      "city": "Denver",
+      "state": "CO",
+      "zip_code": "80201",
+      "country": "USA"
+    },
+    "card_limits": {
+      "credit_limit": 8000.00,
+      "available_credit": 0.00,
+      "currency": "USD"
+    },
+    "status": "expired"
+  }
+]

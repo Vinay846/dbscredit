@@ -1,0 +1,104 @@
+.credit-card-item {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    width: 360px;
+    height: 210px;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.credit-card-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.3);
+}
+
+.credit-card-item.brand-visa {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+}
+
+.credit-card-item.brand-mastercard {
+    background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%);
+}
+
+.credit-card-item.brand-amex {
+    background: linear-gradient(135deg, #047857 0%, #064e3b 100%);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-brand-badge {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-status {
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.card-status.active {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+}
+
+.card-status.expired {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+}
+
+.card-chip {
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(135deg, #fde047 0%, #ca8a04 100%);
+    border-radius: 4px;
+    margin: 4px 0;
+}
+
+.card-number-display {
+    font-family: monospace;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #e2e8f0;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-holder-info, .card-expiry-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+}
+
+.card-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f8fafc;
+}

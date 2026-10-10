@@ -1,0 +1,102 @@
+[
+  {
+    "transaction_id": "txn_1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "card_id": "cc_9a8f3b2e-1c4d-4e5f-8a7b-6c5d4e3f2a1b",
+    "timestamp": "2026-10-09T14:32:10Z",
+    "merchant": {
+      "name": "Amazon",
+      "category": "E-Commerce",
+      "merchant_id": "mch_amzn_9912"
+    },
+    "amount": 124.99,
+    "currency": "USD",
+    "transaction_type": "purchase",
+    "status": "completed",
+    "payment_method": "online",
+    "location": {
+      "city": "Seattle",
+      "state": "WA",
+      "country": "USA"
+    }
+  },
+  {
+    "transaction_id": "txn_7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+    "card_id": "cc_9a8f3b2e-1c4d-4e5f-8a7b-6c5d4e3f2a1b",
+    "timestamp": "2026-10-08T09:15:45Z",
+    "merchant": {
+      "name": "Starbucks",
+      "category": "Food & Beverage",
+      "merchant_id": "mch_sbux_4021"
+    },
+    "amount": 6.75,
+    "currency": "USD",
+    "transaction_type": "purchase",
+    "status": "completed",
+    "payment_method": "contactless",
+    "location": {
+      "city": "Austin",
+      "state": "TX",
+      "country": "USA"
+    }
+  },
+  {
+    "transaction_id": "txn_3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+    "card_id": "cc_4b7c2a1f-8e9d-4c3b-2a1f-9e8d7c6b5a4f",
+    "timestamp": "2026-10-07T18:20:00Z",
+    "merchant": {
+      "name": "Target",
+      "category": "Retail",
+      "merchant_id": "mch_trgt_8834"
+    },
+    "amount": 89.50,
+    "currency": "USD",
+    "transaction_type": "purchase",
+    "status": "completed",
+    "payment_method": "chip_and_pin",
+    "location": {
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA"
+    }
+  },
+  {
+    "transaction_id": "txn_9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
+    "card_id": "cc_1e2d3c4b-5a6f-7e8d-9c0b-1a2b3c4d5e6f",
+    "timestamp": "2026-10-06T11:05:30Z",
+    "merchant": {
+      "name": "Delta Air Lines",
+      "category": "Travel",
+      "merchant_id": "mch_dal_1092"
+    },
+    "amount": 450.00,
+    "currency": "USD",
+    "transaction_type": "purchase",
+    "status": "pending",
+    "payment_method": "online",
+    "location": {
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "USA"
+    }
+  },
+  {
+    "transaction_id": "txn_5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+    "card_id": "cc_8f7e6d5c-4b3a-2f1e-0d9c-8b7a6f5e4d3c",
+    "timestamp": "2026-10-05T16:45:12Z",
+    "merchant": {
+      "name": "Best Buy",
+      "category": "Electronics",
+      "merchant_id": "mch_bby_7741"
+    },
+    "amount": 299.99,
+    "currency": "USD",
+    "transaction_type": "refund",
+    "status": "completed",
+    "payment_method": "online",
+    "location": {
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA"
+    }
+  }
+]
