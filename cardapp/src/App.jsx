@@ -1,10 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import { useSelector, useDispatch } from 'react-redux'
+import { logout } from './redux/authSlice'
 import Login from './components/login/Login'
 import DashBoard from './components/cards/DashBoard'
 
 function App() {
-  const [islogin, setIslogin] = useState(false);
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const dispatch = useDispatch();
+
   return (
     <div className="app-container">
       <header className="app-header">
@@ -12,15 +15,15 @@ function App() {
           <span className="app-logo-icon">💳</span>
           <h2>Credit Card Portal</h2>
         </div>
-        {islogin && (
-          <button className="logout-btn" onClick={() => setIslogin(false)}>
+        {isAuthenticated && (
+          <button className="logout-btn" onClick={() => dispatch(logout())}>
             Logout
           </button>
         )}
       </header>
       <main className="app-main">
-        {!islogin && <Login setIslogin={setIslogin} />}
-        {islogin && <DashBoard />}
+        {!isAuthenticated && <Login />}
+        {isAuthenticated && <DashBoard />}
       </main>
     </div>
   )

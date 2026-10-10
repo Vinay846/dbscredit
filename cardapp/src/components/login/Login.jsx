@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { login } from '../../redux/authSlice'
 import './Login.css';
 
-export default function Login({ setIslogin }) {
+export default function Login() {
     const [username, setUsername] = useState("admin");
     const [password, setPassword] = useState("password123");
     const [error, setError] = useState("");
+    const dispatch = useDispatch();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -12,7 +15,7 @@ export default function Login({ setIslogin }) {
             setError("Please enter username and password.");
             return;
         }
-        setIslogin(true);
+        dispatch(login());
     };
 
     return (

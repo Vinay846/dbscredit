@@ -1,16 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchCards, setSelectedCard, clearSelectedCard } from '../../redux/cardsSlice'
 import Cards from './Cards';
-import { getCardDeatils } from '../../services/services';
-import { useFetch } from '../../hooks/useFetch';
 import './DashBoard.css';
 import CardDetails from './CardDetails';
 import History from '../history/History';
 import Loader from '../common/Loader';
 
 export default function DashBoard() {
-    const { data: cards, isLoading } = useFetch(getCardDeatils);
-    const [details, setDetails] = useState({});
+    const dispatch = useDispatch();
+    const { cards, selectedCard, isLoading } = useSelector((state) => state.cards);
     const [showHistory, setShowHistory] = useState(false);
+
+    useEffect(() => {
+        dispatch(fetchCards());
+    }, [dispatch]);
 
     if (isLoading) return <Loader message="Loading card details..." />;
 
@@ -31,11 +35,11 @@ export default function DashBoard() {
 
     return (
         <div className='dashBoard'>
-            {Object.keys(details).length > 0 ?
+            {selectedCard ?
                 <div className='cardDetails'>
                     <CardDetails 
-                        details={details} 
-                        onBack={() => setDetails({})} 
+                        details={selectedCard} 
+                        onBack={() => dispatch(clearSelectedCard())} 
                         onShowTransaction={() => setShowHistory(true)} 
                     />
                 </div>
@@ -45,7 +49,7 @@ export default function DashBoard() {
 
                     <div className='cards'>
                         {cards.map((c) => (
-                            <Cards key={c.id} card={c} setDetails={setDetails} />
+                            <Cards key={c.id} card={c} setDetails={(card) => dispatch(setSelectedCard(card))} />
                         ))}
                     </div>
                 </div>
